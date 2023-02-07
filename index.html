@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,48 +8,72 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
 </head>
-<body>
-    <div class="sidebar">
-        <div class="logo">
-            logo
-        </div>
-        <div>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Cerca</a></li>
-                <li><a href="">La tua libreria</a></li>
-            </ul>
-        </div>
-        <div id="playlist">
-            <span>Playlist</span>
-            <div>
-                + crea playlist
-            </div>
-        </div>
-        <div class="name-playlist">
-            <ul>
-                <li><a href="">Nome playlist</a></li>
-                <li><a href="">Nome playlist</a></li>
-                <li><a href="">Nome playlist</a></li>
-                <li><a href="">Nome playlist</a></li>
-                <li><a href="">Nome playlist</a></li>
-                <li><a href="">Nome playlist</a></li>
-            </ul>
-        </div>
-    </div>
 
-    <header>
-        
-    </header>
-    <main></main>
-    <footer>
-        <div class="footer-left">1</div>
-        <div class="footer-center">2</div>
-        <div class="footer-right">3</div>
-    </footer>
+<body>
+    <main class="flex">
+        <section id="sidebar">
+            <nav>
+                <div class="bar-top">
+                    <a href="">
+                        <img src="img/logo-small.svg" alt="logo" class="sm-logo">
+                        <img src="img/logo.svg" alt="logo" class="lg-logo">
+                    </a>
+                    <ul class="flex">
+                        <li>
+                            <a href="">
+                                <img src="img/home.svg" alt="homo">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/search.svg" alt="search">
+                                <span>Cerca</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/libreria.svg" alt="libreria">
+                                <span>La tua libreria</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bar-middle playlist-box">
+                    <div>Playlist</div>
+                    <div>
+                        <div>+</div>
+                        crea la playlist
+                    </div>
+                    <ul>
+                        <li>nome</li>
+                        <li>nome</li>
+                        <li>nome</li>
+                        <li>nome</li>
+                        <li>nome</li>
+                    </ul>
+                </div>
+                <div class="bar-down">
+                    testo
+                </div>
+            </nav>
+        </section>
+
+        <section id="main-box">
+            <header class="flex">
+                <div class="btn">Effettua l'upgrade</div>
+            </header>
+        </section>
+    </main>
+
+    <footer></footer>
 
 </body>
+
 </html>

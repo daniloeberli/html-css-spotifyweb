@@ -14,51 +14,122 @@ Common
 
 a{
     text-decoration: none;
+    color: #a3a3a3;
 }
 
-ul{
+li{
     list-style: none;
 }
 
-body{
-    font-family: 'Montserrat', sans-serif;
+.flex{
+    display: flex;
+}
+
+.lg-logo{
+    display: none;
+}
+
+#sidebar nav span{
+    display: none;
 }
 
 /*
 Sidebar
 */
 
-.sidebar{
-    max-width: 230px;
-    height: 100%;
-    background-color: aqua;
-    position: fixed;
-    padding: 20px;
+#sidebar{
+    background-color: black;
+    height: calc(100vh - 5.625rem);
+    width: 3.125rem;
+    padding: .75rem;
+    color: #d2d2d2;
 }
 
-@media screen and (max-width: 552px) {
+.playlist-box{
+    display: none;
+}
 
-    .sidebar{
-        min-width: 50px;
-    }
+#sidebar nav a{
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+}
 
-    #playlist{
-        display: none;
-    }
+#sidebar nav img{
+    width: 100%;
+    max-width: 40px;
+}
 
-    .name-playlist{
-        display: none;
-    }
+#sidebar nav .flex{
+    flex-wrap: wrap;
+}
+
+
+#sidebar nav .playlist-box{
+    overflow: auto;
+    height: 15.625rem;
 }
 
 /*
 Header
 */
 
+header{
+    background-color: #080b12;
+    justify-content: flex-end;
+}
+
+.btn{
+    color: white;
+    padding: .625rem 2.1875rem;
+    border: 1px solid white;
+    border-radius: 20px;
+}
 
 /*
 Main
 */
+
+#main-box{
+    background-color: #141922;
+    height: calc(100vh - 5.625rem);
+    width: calc(100% - 3.125rem);
+    overflow: auto;
+}
+
+@media screen and (min-width: 640px) {
+    #main-box{
+        height: calc(100vh - 5.625rem);
+        width: calc(100% - 14.375rem);
+    }
+
+    #sidebar{
+        width: 14.375rem;
+        height: calc(100vh - 5.625rem);
+        padding: 1.25rem;
+
+    }
+
+    .playlist-box{
+        display: block;
+    }
+
+    .sm-logo{
+        display: none;
+    }
+
+    .lg-logo{
+        display: block;
+    }
+
+    #sidebar nav .flex li{
+        width: 100%;
+    }
+
+    #sidebar nav span{
+        display: inline;
+    }
+}
 
 /*
 Footer
@@ -66,5 +137,6 @@ Footer
 
 footer{
     background-color: #282828;
-    display: flex;
+    height: 5.625rem;
+    width: 100%;
 }
