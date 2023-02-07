@@ -1,0 +1,70 @@
+/*
+Reset
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+Common
+*/
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*
+Sidebar
+*/
+
+.sidebar{
+    max-width: 230px;
+    height: 100%;
+    background-color: aqua;
+   /* position: fixed;*/
+    padding: 20px;
+}
+
+@media screen and (max-width: 552px) {
+
+    .sidebar{
+        min-width: 50px;
+    }
+
+    #playlist{
+        display: none;
+    }
+
+    .name-playlist{
+        display: none;
+    }
+}
+
+/*
+Header
+*/
+
+
+/*
+Main
+*/
+
+/*
+Footer
+*/
+
+footer{
+    background-color: #282828;
+    display: flex;
+}
