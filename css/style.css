@@ -12,6 +12,18 @@ Reset
 Common
 */
 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h4{
+    color: white;
+}
+
+h5{
+    color: #7a7d81;
+}
+
 a{
     text-decoration: none;
     color: #a3a3a3;
@@ -31,6 +43,15 @@ li{
 
 #sidebar nav span{
     display: none;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.wrap{
+    flex-wrap: wrap;
 }
 
 /*
@@ -75,7 +96,7 @@ Header
 */
 
 header{
-    background-color: #080b12;
+    background-color:rgba(0,0,0,0.5);;
     justify-content: flex-end;
 }
 
@@ -84,6 +105,7 @@ header{
     padding: .625rem 2.1875rem;
     border: 1px solid white;
     border-radius: 20px;
+    margin-right: .625rem;
 }
 
 /*
@@ -95,6 +117,31 @@ Main
     height: calc(100vh - 5.625rem);
     width: calc(100% - 3.125rem);
     overflow: auto;
+}
+
+#main-box nav .flex{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#main-box nav ul li{
+    padding: 1.2rem;
+}
+
+#main-box .col{
+    width: calc(100% / 2);
+}
+
+#main-box .row{
+    margin: 0 -0.625rem;
+}
+
+#main-box .col .col-content{
+    padding: 0 .625rem;
+}
+
+#main-box .recent-play{
+    padding: 1.25rem;
 }
 
 @media screen and (min-width: 640px) {
@@ -131,6 +178,19 @@ Main
     }
 }
 
+@media screen and (min-width: 878px) {
+    #main-box .col{
+        width: calc(100% / 4);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #main-box .col{
+        width: calc(100% / 6);
+    }
+}
+
+
 /*
 Footer
 */
@@ -138,5 +198,5 @@ Footer
 footer{
     background-color: #282828;
     height: 5.625rem;
-    width: 100%;
+    /*width: 100%;*/
 }
