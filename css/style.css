@@ -18,6 +18,11 @@ body{
     overflow: hidden;
 }
 
+::-webkit-scrollbar{
+    /*rimuove la scrollbar*/
+    display: none;
+}
+
 main{
     height: calc(100% - 5.625rem);
     
