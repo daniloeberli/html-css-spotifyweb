@@ -15,11 +15,14 @@ Common
 body{
     font-family: 'Montserrat', sans-serif;
     height: 100vh;
+    overflow: hidden;
 }
 
 main{
     height: calc(100% - 5.625rem);
+    
 }
+
 
 h1, h4{
     color: white;
@@ -272,6 +275,7 @@ footer .footer-right{
 
 footer .album-img img{
     min-width: 1.875rem;
+    max-width: 3rem;
 }
 
 footer .album-icon{
