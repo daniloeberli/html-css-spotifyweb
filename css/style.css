@@ -76,6 +76,14 @@ Sidebar
     gap: .625rem;
 }
 
+#sidebar nav .bar-top ul{
+    padding: .3125rem 0;
+}
+
+#sidebar nav .bar-top li{
+    padding: .3125rem 0;
+}
+
 #sidebar nav img{
     width: 100%;
     max-width: 40px;
@@ -98,6 +106,7 @@ Header
 header{
     background-color:rgba(0,0,0,0.5);;
     justify-content: flex-end;
+    padding: .9375rem 0;
 }
 
 .btn{
@@ -130,18 +139,27 @@ Main
 
 #main-box .col{
     width: calc(100% / 2);
+    text-align: center;
+}
+
+#main-box h1{
+    padding-bottom: 1.875rem;
 }
 
 #main-box .row{
-    margin: 0 -0.625rem;
+    margin: -0.3125rem -0.625rem;
 }
 
 #main-box .col .col-content{
-    padding: 0 .625rem;
+    padding: .3125rem .625rem;
 }
 
 #main-box .recent-play{
     padding: 1.25rem;
+}
+
+#main-box .col-txt {
+    padding-top: .625rem;
 }
 
 @media screen and (min-width: 640px) {
@@ -199,4 +217,7 @@ footer{
     background-color: #282828;
     height: 5.625rem;
     /*width: 100%;*/
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5625rem .625rem;
 }
