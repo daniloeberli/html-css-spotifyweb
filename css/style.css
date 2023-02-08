@@ -162,6 +162,10 @@ Main
     padding-top: .625rem;
 }
 
+#main-box .artisti .col-img img{
+    border-radius: 50%;
+}
+
 @media screen and (min-width: 640px) {
     #main-box{
         height: calc(100vh - 5.625rem);
@@ -217,7 +221,33 @@ footer{
     background-color: #282828;
     height: 5.625rem;
     /*width: 100%;*/
-    display: flex;
     justify-content: space-between;
     padding: 1.5625rem .625rem;
+}
+
+footer .footer-left{
+    width: 20%;
+}
+
+footer .footer-right{
+    width: 20%;
+}
+
+footer .album-img img{
+    min-width: 1.875rem;
+}
+
+footer .album-icon{
+    flex-direction: column;
+}
+
+footer .name{
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+footer .name .name-song{
+    flex-direction: column;
+    color: #6e6e6e;
 }
