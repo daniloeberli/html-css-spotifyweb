@@ -520,3 +520,10 @@ Effetti
     color: white;
 }
 
+footer .footer-left i:hover{
+    color: white;
+}
+
+footer .footer-center #bigger:hover{
+    font-size: 40px;
+}
