@@ -192,8 +192,7 @@ Sidebar
 
 #sidebar nav .playlist-box ul li{
     padding: .3125rem 0;
-    font-size: .75rem;
-    color: ;
+    font-size: .75rem; 
 }
 
 #sidebar hr{
@@ -225,6 +224,7 @@ header{
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 999;
 }
 
 
