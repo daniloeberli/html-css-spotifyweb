@@ -26,7 +26,6 @@ body{
 main{
     height: calc(100% - 5.625rem);
     overflow: hidden;
-    
 }
 
 
@@ -87,6 +86,28 @@ img{
     vertical-align: middle;
 }
 
+#profile{
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.pd-5{
+    padding: .3125rem 0;
+}
+
+.pt-10{
+    padding-top: 10px;
+}
+
+#main-box .creato h1, #main-box .artisti h1{
+    padding: .625rem 0;
+}
+
+#main-box .recent-play span{
+    color: #7a7d81;
+}
+
 /*
 Sidebar
 */
@@ -110,6 +131,7 @@ Sidebar
 .playlist-box{
     display: none;
 }
+
 
 #sidebar nav a{
     display: flex;
@@ -153,8 +175,15 @@ Sidebar
     overflow-y: auto;
 }
 
+#sidebar nav .playlist-box ul li{
+    padding: .3125rem 0;
+    font-size: .75rem;
+    color: ;
+}
+
 #sidebar hr{
     display: none;
+    margin: .3125rem 0;
 }
 
 @media screen and (min-width: 640px) {
@@ -215,6 +244,7 @@ Main
 
 #main-box nav ul li{
     padding: 1.2rem;
+    font-size: .875rem;
 }
 
 #main-box .col{
@@ -222,7 +252,7 @@ Main
     text-align: center;
 }
 
-#main-box h1{
+#main-box .first h1{
     padding-bottom: 1.875rem;
 }
 
@@ -259,6 +289,10 @@ Main
 
     }
 
+    #sidebar nav .flex li:first-child{
+        border-left: 2px solid greenyellow;
+    }
+
     .playlist-box{
         /*display:block*/
         display: flex;
@@ -286,22 +320,19 @@ Main
         width: calc(100% - 14.375rem);
     }
 
+}
+
+@media screen and (min-width: 878px) {
     #main-box .col{
         width: calc(100% / 4);
     }
 }
 
-@media screen and (min-width: 879px) {
+@media screen and (min-width: 1000px) {
     #main-box .col{
         width: calc(100% / 6);
     }
 }
-
-/*@media screen and (min-width: 1000px) {
-    #main-box .col{
-        width: calc(100% / 6);
-    }
-}*/
 
 
 /*
@@ -352,14 +383,23 @@ footer .name .name-song{
 footer .footer-center{
     flex-direction: column;
     justify-content: center;
+    flex-grow: 1;
+    padding: 0 2.5rem;
 }
 
 footer .bar {
     height: 4px;
     max-width: 60%;
-    background-color: gray;
+    background-color: #5a5a5a;
+    flex-grow: 2;
+   /* margin:0 .75rem;*/
+}
+
+footer .bar-prog {
+    height: 4px;
+    background-color: #c1c1c1;
     flex-grow: 1;
-    margin:0 .75rem;
+   /* margin:0 .75rem;*/
 }
 
 footer .btn-player, footer .bar-player {
@@ -380,12 +420,9 @@ footer .btn-player i{
     color: white;
 }
 
-footer .footer-right div{
-    margin: 0 .625rem;
-}
-
 footer .footer-right i{
     color: white;
+    padding: 0 .3125rem;
 }
 
 @media screen and (min-width: 878px) {
@@ -402,4 +439,24 @@ footer .footer-right i{
     footer .album-icon i{
         padding: 0 .625rem;
     }
+}
+
+/*
+Effetti
+*/
+
+#sidebar .playlist-maker:hover{
+    color: white;
+}
+
+#main-box .btn:hover{
+    transform: scale(1.1);
+}
+
+#main-box .col-content img:hover{
+    filter: brightness(50%);
+}
+
+#main-box nav li a:hover{
+    color: white;
 }
