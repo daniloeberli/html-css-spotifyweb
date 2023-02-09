@@ -18,13 +18,14 @@ body{
     overflow: hidden;
 }
 
-::-webkit-scrollbar{
-    /*rimuove la scrollbar*/
+/*::-webkit-scrollbar{
+    rimuove la scrollbar
     display: none;
-}
+}*/
 
 main{
     height: calc(100% - 5.625rem);
+    overflow: hidden;
     
 }
 
@@ -71,6 +72,21 @@ img{
     display: none;
 }
 
+.align-center{
+    align-items: center;
+}
+
+.plus-sign{
+    width: 2.5rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    display: inline-block;
+    background-color: gray;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+}
+
 /*
 Sidebar
 */
@@ -82,6 +98,7 @@ Sidebar
     padding: .75rem;
     color: #d2d2d2;
 }
+
 
 #sidebar nav{
     display: flex;
@@ -108,9 +125,14 @@ Sidebar
     padding: .3125rem 0;
 }
 
-#sidebar nav img{
+#sidebar nav ul img{
     width: 100%;
-    max-width: 40px;
+    max-width: 1.875rem;
+}
+
+#sidebar nav .bar-down img{
+    width: 100%;
+    max-width: 1.875rem;
 }
 
 #sidebar nav .flex{
@@ -118,16 +140,33 @@ Sidebar
 }
 
 
-#sidebar nav .playlist-box{
+.playlist-box{
     overflow: auto;
-    height: 15.625rem;
+    overflow-y: hidden;
+    display: none;
+   /* height: 15.625rem;*/
+    flex-grow: 1;
+}
+
+#sidebar nav .playlist-box ul{
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+#sidebar hr{
+    display: none;
 }
 
 @media screen and (min-width: 640px) {
     .text-none{
         display: inline;
     }
+
+    #sidebar hr{
+        display: block;
+    }
 }
+
 
 /*
 Header
@@ -143,6 +182,8 @@ header{
     top: 0;
     right: 0;
 }
+
+
 
 .btn{
     color: white;
@@ -219,7 +260,9 @@ Main
     }
 
     .playlist-box{
-        display: block;
+        /*display:block*/
+        display: flex;
+        flex-direction: column;
     }
 
     .sm-logo{
@@ -228,6 +271,7 @@ Main
 
     .lg-logo{
         display: block;
+        max-width: 130px;
     }
 
     #sidebar nav .flex li{
@@ -241,19 +285,23 @@ Main
     header{
         width: calc(100% - 14.375rem);
     }
-}
 
-@media screen and (min-width: 878px) {
     #main-box .col{
         width: calc(100% / 4);
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 879px) {
     #main-box .col{
         width: calc(100% / 6);
     }
 }
+
+/*@media screen and (min-width: 1000px) {
+    #main-box .col{
+        width: calc(100% / 6);
+    }
+}*/
 
 
 /*
