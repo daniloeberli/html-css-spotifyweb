@@ -423,6 +423,7 @@ footer .name{
 footer .name .name-song{
     flex-direction: column;
     color: #6e6e6e;
+    gap: 4px;
 }
 
 footer .footer-center{
@@ -526,4 +527,13 @@ footer .footer-left i:hover{
 
 footer .footer-center #bigger:hover{
     font-size: 40px;
+}
+
+footer .name-song:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+footer .bar-prog:hover{
+    background-color: yellowgreen;
 }
