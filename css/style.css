@@ -37,6 +37,14 @@ h5{
     color: #7a7d81;
 }
 
+#white{
+    color: white;
+}
+
+#bigger{
+    font-size: 30px;
+}
+
 a{
     text-decoration: none;
     color: #a3a3a3;
@@ -132,6 +140,9 @@ Sidebar
     display: none;
 }
 
+#sidebar .bar-top span{
+    font-size: .875rem;
+}
 
 #sidebar nav a{
     display: flex;
@@ -145,6 +156,10 @@ Sidebar
 
 #sidebar nav .bar-top li{
     padding: .3125rem 0;
+}
+
+#sidebar .bar-middle #white{
+    font-weight: 800;
 }
 
 #sidebar nav ul img{
@@ -242,6 +257,10 @@ Main
     flex-wrap: wrap;
 }
 
+#main-box nav ul li #green{
+    border-bottom: 1px solid yellowgreen;
+}
+
 #main-box nav ul li{
     padding: 1.2rem;
     font-size: .875rem;
@@ -275,6 +294,7 @@ Main
 #main-box .artisti .col-img img{
     border-radius: 50%;
 }
+
 
 @media screen and (min-width: 640px) {
     #main-box{
@@ -334,6 +354,31 @@ Main
     }
 }
 
+.col-img{
+    position: relative;
+}
+
+.col-img .play-btn{
+    position: absolute;
+    font-size: 3.125rem;
+    display: none;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.col-img:hover .play-btn {
+    z-index: 2;
+    display: block;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.col-img .play-btn i {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
 
 /*
 Footer
@@ -408,6 +453,7 @@ footer .btn-player, footer .bar-player {
     align-items: center;
 }
 
+
 footer .btn-player div{
     margin: 0 .625rem;
 }
@@ -449,6 +495,19 @@ Effetti
     color: white;
 }
 
+#sidebar .playlist-box li a:hover{
+    color: white;
+}
+
+#sidebar .bar-top li span:hover{
+    color: white;
+}
+
+#sidebar .bar-down a div:hover{
+    color: white;
+}
+
+
 #main-box .btn:hover{
     transform: scale(1.1);
 }
@@ -460,3 +519,4 @@ Effetti
 #main-box nav li a:hover{
     color: white;
 }
+
